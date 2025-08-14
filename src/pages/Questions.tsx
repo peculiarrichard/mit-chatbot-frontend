@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-const API_BASE = "http://127.0.0.1:8000";
+const API_BASE = import.meta.env.VITE_API_BASE_URL;
 
 export const AdminDashboard = () => {
   const [unansweredQuestions, setUnansweredQuestions] = useState([]);
